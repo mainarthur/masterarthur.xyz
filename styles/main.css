@@ -65,6 +65,13 @@ h3 {
   border-color: var(--color);
 }
 
+.linkedin:hover,
+.linkedin:active {
+  --color: #2867b2;
+  color: var(--color);
+  border-color: var(--color);
+}
+
 .github:hover,
 .github:active {
   --color: #6e5494;
