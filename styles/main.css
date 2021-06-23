@@ -50,11 +50,12 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: .5rem;
+  padding: 0.5rem;
   text-decoration: none;
   color: white;
   font-size: 1.5rem;
   border: 2px solid #fff;
+  text-align: center;
 }
 
 .telegram:hover,
@@ -170,7 +171,7 @@ h3 {
 }
 
 .section__title::before {
-  content: "";
+  content: '';
   display: block;
   height: 2px;
   position: absolute;
@@ -200,17 +201,29 @@ h3 {
 
 /* Define breakpoints and font sizes */
 @media (min-width: 40em) {
-  html { font-size: 1.0625rem; }
-  .main { width: 76%; }
+  html {
+    font-size: 1.0625rem;
+  }
+  .main {
+    width: 76%;
+  }
 }
 
 @media (min-width: 64em) {
-  html { font-size: 1.125rem; }
-  .main { width: 50%; }
+  html {
+    font-size: 1.125rem;
+  }
+  .main {
+    width: 50%;
+  }
 }
 
 /* Define max font size and viewport */
 @media (min-width: 80em) {
-  html { font-size: 1.1875rem; }
-  .main { width: 42%; }
+  html {
+    font-size: 1.1875rem;
+  }
+  .main {
+    width: 42%;
+  }
 }
