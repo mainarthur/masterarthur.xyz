@@ -148,6 +148,11 @@ h1 {
   border-color: var(--color);
 }
 
+.no-border {
+  border: none;
+  margin-top: 60px;
+}
+
 /* Define breakpoints and font sizes */
 @media (min-width: 640px) and (max-width: 1023px) {
   html {
