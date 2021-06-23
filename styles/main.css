@@ -2,27 +2,15 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(34, 32, 32);
+  font-family: 'Courier Prime', monospace;
 }
 /* Define minimum font size */
 html {
   font-size: 1rem;
 }
 
-* {
-  font-family: 'Courier Prime', monospace;
-}
-
-.left {
-  height: 0px;
-  content: '';
-  width: 0%;
-  float: left;
-}
-
 .main {
-  float: left;
-  width: 100%;
-  height: 100%;
+  margin: 0 auto;
   padding: 8px;
   background-color: black;
   padding-bottom: 32px;
@@ -44,20 +32,17 @@ h1 {
 }
 
 .hr {
-  margin-top: 16px;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 16px auto 16px;
+  border: 2px solid #fff;
+  width: 50%;
 }
 
 .link {
-  margin-top: 16px;
   text-decoration: none;
   color: white;
+  display: block;
   width: 70%;
+  margin: 16px auto 16px;
   padding: 8px;
   text-align: center;
   font-size: 1.5rem;
@@ -120,15 +105,53 @@ h1 {
   border-image-source: linear-gradient(to right, red, purple);
 }
 
+.lgbt1 {
+  --color: #dd0303;
+  color: var(--color);
+  border-color: var(--color);
+}
+
+.lgbt2 {
+  --color: #f78800;
+  color: var(--color);
+  border-color: var(--color);
+}
+
+.lgbt3 {
+  --color: #f7e600;
+  color: var(--color);
+  border-color: var(--color);
+}
+
+.lgbt4 {
+  --color: #007c25;
+  color: var(--color);
+  border-color: var(--color);
+}
+
+.lgbt5 {
+  --color: #004bf7;
+  color: var(--color);
+  border-color: var(--color);
+}
+
+.lgbt6 {
+  --color: #710783;
+  color: var(--color);
+  border-color: var(--color);
+}
+
+.lgbt:active,
+.lgbt:hover {
+  --color: #fff;
+  color: var(--color);
+  border-color: var(--color);
+}
+
 /* Define breakpoints and font sizes */
 @media (min-width: 640px) and (max-width: 1023px) {
   html {
     font-size: 1.0625rem;
-  }
-
-  .left {
-    height: 1px;
-    width: 15%;
   }
 
   .main {
@@ -140,10 +163,6 @@ h1 {
   html {
     font-size: 1.125rem;
   }
-  .left {
-    height: 1px;
-    width: 25%;
-  }
 
   .main {
     width: 50%;
@@ -154,11 +173,6 @@ h1 {
 @media (min-width: 1280px) {
   html {
     font-size: 1.1875rem;
-  }
-
-  .left {
-    height: 1px;
-    width: 30%;
   }
 
   .main {
