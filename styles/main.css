@@ -166,6 +166,26 @@ h3 {
 
 .section__title {
   margin-bottom: 16px;
+  position: relative;
+}
+
+.section__title::before {
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+}
+
+.section__title-text {
+  background-color: black;
+  position: relative;
+  display: inline-block;
+  padding: 0 8px;
 }
 
 .list {
