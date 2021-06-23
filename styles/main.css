@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -11,42 +17,43 @@ html {
 
 .main {
   margin: 0 auto;
-  padding: 8px;
   background-color: black;
-  padding-bottom: 32px;
+  padding: 32px 8px;
+  min-height: 100vh;
 }
 
-h6 {
+h1,
+h2,
+h3 {
   color: white;
-  font-weight: 500;
-  font-size: 1.25rem;
   text-align: center;
   margin: 0;
 }
 
 h1 {
-  color: white;
   font-weight: 700;
   font-size: 2.5rem;
-  text-align: center;
 }
 
-.hr {
-  margin: 16px auto 16px;
-  border: 2px solid #fff;
-  width: 50%;
+h2 {
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-bottom: 32px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1.15rem;
 }
 
 .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
   text-decoration: none;
   color: white;
-  display: block;
-  width: 70%;
-  margin: 16px auto 16px;
-  padding: 8px;
-  text-align: center;
   font-size: 1.5rem;
-
   border: 2px solid #fff;
 }
 
@@ -148,39 +155,42 @@ h1 {
   border-color: var(--color);
 }
 
-.no-border {
-  border: none;
-  margin-top: 60px;
+.section {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.section + .section {
+  margin-top: 32px;
+}
+
+.section__title {
+  margin-bottom: 16px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list__item + .list__item {
+  margin-top: 16px;
 }
 
 /* Define breakpoints and font sizes */
-@media (min-width: 640px) and (max-width: 1023px) {
-  html {
-    font-size: 1.0625rem;
-  }
-
-  .main {
-    width: 70%;
-  }
+@media (min-width: 40em) {
+  html { font-size: 1.0625rem; }
+  .main { width: 76%; }
 }
 
-@media (min-width: 1024px) and (max-width: 1279px) {
-  html {
-    font-size: 1.125rem;
-  }
-
-  .main {
-    width: 50%;
-  }
+@media (min-width: 64em) {
+  html { font-size: 1.125rem; }
+  .main { width: 50%; }
 }
 
 /* Define max font size and viewport */
-@media (min-width: 1280px) {
-  html {
-    font-size: 1.1875rem;
-  }
-
-  .main {
-    width: 40%;
-  }
+@media (min-width: 80em) {
+  html { font-size: 1.1875rem; }
+  .main { width: 42%; }
 }
