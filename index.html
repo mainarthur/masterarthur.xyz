@@ -53,7 +53,20 @@
   <body>
     <main class="main">
       <h1>Arthur Kh</h1>
-      <h2>20 y.o. Software Developer</h2>
+      <h2>
+        <script>
+          const birthDate = new Date('August 29, 2001');
+          const now = new Date();
+          const yearsDifference =
+            now.getFullYear() -
+            birthDate.getFullYear() -
+            (now.getMonth() < birthDate.getMonth() ||
+              (now.getMonth() >= birthDate.getMonth() &&
+                now.getDate() < birthDate.getDate()));
+          document.write(yearsDifference);
+        </script>
+        y.o. Software Developer
+      </h2>
 
       <section class="section">
         <h3 class="section__title">
