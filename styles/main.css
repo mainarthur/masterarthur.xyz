@@ -156,11 +156,34 @@ h3 {
   border-color: var(--color);
 }
 
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 5%;
+  }
+  50% {
+    background-position: 100% 96%;
+  }
+  100% {
+    background-position: 0% 5%;
+  }
+}
+
 .lgbt:active,
 .lgbt:hover {
-  --color: #fff;
-  color: var(--color);
-  border-color: var(--color);
+  color: white;
+  border-color: white;
+  background: linear-gradient(
+    312deg,
+    #dd0303,
+    #f78800,
+    #f7e600,
+    #007c25,
+    #004bf7,
+    #710783,
+    #dd0303
+  );
+  background-size: 1400% 1400%;
+  animation: backgroundAnimation 6s ease infinite;
 }
 
 .section {
