@@ -186,6 +186,13 @@ h3 {
   animation: backgroundAnimation 6s ease infinite;
 }
 
+.npm:hover {
+  color: #e13713;
+  border-width: 2px;
+  border-top-style: solid;
+  border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+}
+
 .section {
   width: 70%;
   margin: 0 auto;
