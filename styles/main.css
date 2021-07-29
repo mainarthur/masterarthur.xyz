@@ -10,7 +10,7 @@ body {
   background-color: rgb(34, 32, 32);
   font-family: 'Courier Prime', monospace;
 }
-/* Define minimum font size */
+
 html {
   font-size: 1rem;
 }
@@ -89,6 +89,13 @@ h3 {
 .gmail:hover,
 .gmail:active {
   --color: #bb001b;
+  color: var(--color);
+  border-color: var(--color);
+}
+
+.producthunt:hover,
+.producthunt:active {
+  --color: #da552f;
   color: var(--color);
   border-color: var(--color);
 }
