@@ -267,7 +267,7 @@
       now.getFullYear() -
       birthDate.getFullYear() -
       (now.getMonth() < birthDate.getMonth() ||
-        (now.getMonth() >= birthDate.getMonth() &&
+        (now.getMonth() == birthDate.getMonth() &&
           now.getDate() < birthDate.getDate()))
     document.getElementById('age').innerText = yearsDifference
   </script>
