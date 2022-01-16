@@ -1,273 +1,273 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  background-color: rgb(34, 32, 32);
-  font-family: 'Courier Prime', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(34, 32, 32);
+    font-family: 'Courier Prime', monospace;
 }
 
 html {
-  font-size: 1rem;
+    font-size: 1rem;
 }
 
 .main {
-  margin: 0 auto;
-  background-color: black;
-  padding: 32px 8px;
-  min-height: 100vh;
+    margin: 0 auto;
+    background-color: black;
+    padding: 32px 8px;
+    min-height: 100vh;
 }
 
 h1,
 h2,
 h3 {
-  color: white;
-  text-align: center;
-  margin: 0;
+    color: white;
+    text-align: center;
+    margin: 0;
 }
 
 h1 {
-  font-weight: 700;
-  font-size: 2.5rem;
+    font-weight: 700;
+    font-size: 2.5rem;
 }
 
 h2 {
-  font-weight: 500;
-  font-size: 1.25rem;
-  margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-bottom: 32px;
 }
 
 h3 {
-  font-weight: 500;
-  font-size: 1.15rem;
+    font-weight: 500;
+    font-size: 1.15rem;
 }
 
 .link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem;
-  text-decoration: none;
-  color: white;
-  font-size: 1.5rem;
-  border: 2px solid #fff;
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    border: 2px solid #fff;
+    text-align: center;
 }
 
 .telegram:hover,
 .telegram:active {
-  --color: rgb(51, 121, 250);
-  color: var(--color);
-  border-color: var(--color);
+    --color: rgb(51, 121, 250);
+    color: var(--color);
+    border-color: var(--color);
 }
 
 .linkedin:hover,
 .linkedin:active {
-  --color: #2867b2;
-  color: var(--color);
-  border-color: var(--color);
+    --color: #2867b2;
+    color: var(--color);
+    border-color: var(--color);
 }
 
 .github:hover,
 .github:active {
-  --color: #6e5494;
-  color: var(--color);
-  border-color: var(--color);
+    --color: #6e5494;
+    color: var(--color);
+    border-color: var(--color);
 }
 
 .gitlab:hover,
 .gitlab:active {
-  --color: #fca326;
-  color: var(--color);
-  border-color: var(--color);
+    --color: #fca326;
+    color: var(--color);
+    border-color: var(--color);
 }
 
 .gmail:hover,
 .gmail:active {
-  --color: #bb001b;
-  color: var(--color);
-  border-color: var(--color);
+    --color: #bb001b;
+    color: var(--color);
+    border-color: var(--color);
 }
 
 .producthunt:hover,
 .producthunt:active {
-  --color: #da552f;
-  color: var(--color);
-  border-color: var(--color);
+    --color: #da552f;
+    color: var(--color);
+    border-color: var(--color);
 }
 
 .donate:hover,
 .donate:active {
-  --color: #4c60d2;
-  color: var(--color);
-  border-color: var(--color);
+    --color: #4c60d2;
+    color: var(--color);
+    border-color: var(--color);
 }
 
 .donate:hover svg,
 .donate:active svg {
-  --color: #4c60d2;
-  fill: var(--color);
+    --color: #4c60d2;
+    fill: var(--color);
 }
 
 .donate svg {
-  margin-left: 8px;
-  fill: white;
+    margin-left: 8px;
+    fill: white;
 }
 
 .instagram:hover,
 .instagram:active {
-  color: #bd0447;
-  border: 2px solid;
-  border-image-slice: 1;
-  border-width: 2px;
-  border-image-source: linear-gradient(to right, red, purple);
+    color: #bd0447;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to right, red, purple);
 }
 
 .lgbt1 {
-  --color: #dd0303;
-  color: var(--color);
-  border-color: var(--color);
+    --color: #dd0303;
+    color: var(--color);
+    border-color: var(--color);
 }
 
 .lgbt2 {
-  --color: #f78800;
-  color: var(--color);
-  border-color: var(--color);
+    --color: #f78800;
+    color: var(--color);
+    border-color: var(--color);
 }
 
 .lgbt3 {
-  --color: #f7e600;
-  color: var(--color);
-  border-color: var(--color);
+    --color: #f7e600;
+    color: var(--color);
+    border-color: var(--color);
 }
 
 .lgbt4 {
-  --color: #007c25;
-  color: var(--color);
-  border-color: var(--color);
+    --color: #007c25;
+    color: var(--color);
+    border-color: var(--color);
 }
 
 .lgbt5 {
-  --color: #004bf7;
-  color: var(--color);
-  border-color: var(--color);
+    --color: #004bf7;
+    color: var(--color);
+    border-color: var(--color);
 }
 
 .lgbt6 {
-  --color: #710783;
-  color: var(--color);
-  border-color: var(--color);
+    --color: #710783;
+    color: var(--color);
+    border-color: var(--color);
 }
 
 @keyframes backgroundAnimation {
-  0% {
-    background-position: 0% 5%;
-  }
-  50% {
-    background-position: 100% 96%;
-  }
-  100% {
-    background-position: 0% 5%;
-  }
+    0% {
+        background-position: 0% 5%;
+    }
+    50% {
+        background-position: 100% 96%;
+    }
+    100% {
+        background-position: 0% 5%;
+    }
 }
 
 .lgbt:active,
 .lgbt:hover {
-  color: white;
-  border-color: white;
-  background: linear-gradient(
-    312deg,
-    #dd0303,
-    #f78800,
-    #f7e600,
-    #007c25,
-    #004bf7,
-    #710783,
-    #dd0303
-  );
-  background-size: 1400% 1400%;
-  animation: backgroundAnimation 6s ease infinite;
+    color: white;
+    border-color: white;
+    background: linear-gradient(312deg, #dd0303, #f78800, #f7e600, #007c25, #004bf7, #710783, #dd0303);
+    background-size: 1400% 1400%;
+    animation: backgroundAnimation 6s ease infinite;
 }
 
 .npm:hover {
-  color: #e13713;
-  border-width: 2px;
-  border-top-style: solid;
-  border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+    color: #e13713;
+    border-width: 2px;
+    border-top-style: solid;
+    border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
 }
 
 .section {
-  width: 70%;
-  margin: 0 auto;
+    width: 70%;
+    margin: 0 auto;
 }
 
-.section + .section {
-  margin-top: 32px;
+.section+.section {
+    margin-top: 32px;
 }
 
 .section__title {
-  margin-bottom: 16px;
-  position: relative;
+    margin-bottom: 16px;
+    position: relative;
 }
 
 .section__title::before {
-  content: '';
-  display: block;
-  height: 2px;
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #ffffff;
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ffffff;
 }
 
 .section__title-text {
-  background-color: black;
-  position: relative;
-  display: inline-block;
-  padding: 0 8px;
+    background-color: black;
+    position: relative;
+    display: inline-block;
+    padding: 0 8px;
 }
 
 .list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.list__item + .list__item {
-  margin-top: 16px;
+.list__item+.list__item {
+    margin-top: 16px;
 }
+
 
 /* Define breakpoints and font sizes */
+
 @media (min-width: 40em) {
-  html {
-    font-size: 1.0625rem;
-  }
-  .main {
-    width: 76%;
-  }
+    html {
+        font-size: 1.0625rem;
+    }
+    .main {
+        width: 76%;
+    }
 }
 
 @media (min-width: 64em) {
-  html {
-    font-size: 1.125rem;
-  }
-  .main {
-    width: 50%;
-  }
+    html {
+        font-size: 1.125rem;
+    }
+    .main {
+        width: 50%;
+    }
 }
 
+
 /* Define max font size and viewport */
+
 @media (min-width: 80em) {
-  html {
-    font-size: 1.1875rem;
-  }
-  .main {
-    width: 42%;
-  }
+    html {
+        font-size: 1.1875rem;
+    }
+    .main {
+        width: 42%;
+    }
+}
+
+.badge {
+    width: 100%;
+    height: auto;
 }
