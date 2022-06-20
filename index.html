@@ -53,7 +53,9 @@
   <body>
     <main class="main">
       <section class="avatar">
-        <img class="image" src="/avatar.jpg" />
+        <div class="skeleton">
+          <img class="image loading" src="/avatar.jpg" />
+        </div>
       </section>
       <h1>Arthur Kh</h1>
       <h2><span id="age"></span> y.o. Software Developer</h2>
@@ -280,8 +282,10 @@
             <a
               href="https://www.credly.com/badges/5fa227cf-28e2-4ac0-8a33-8fa708a045b8"
               target="_blank"
-              ><img class="image" src="/badge.png"
-            /></a>
+            >
+              <div class="skeleton">
+                <img class="image loading" src="/badge.png" /></div
+            ></a>
           </li>
         </ul>
       </section>
@@ -297,5 +301,22 @@
         (now.getMonth() == birthDate.getMonth() &&
           now.getDate() < birthDate.getDate()));
     document.getElementById("age").innerText = yearsDifference;
+    const images = document.querySelectorAll("img");
+
+    for (let i = 0; i < images.length; i++) {
+      const image = images[i];
+      if (image.complete) {
+        imageLoaded.call(image);
+        continue;
+      }
+      image.onload = function imageLoaded() {
+        this.classList.remove("loading");
+        this.parentElement.classList.remove("skeleton");
+      };
+    }
+    function imageLoaded() {
+      this.classList.remove("loading");
+      this.parentElement.classList.remove("skeleton");
+    }
   </script>
 </html>
