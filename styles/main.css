@@ -94,9 +94,9 @@ h3 {
     border-color: var(--color);
 }
 
-.producthunt:hover,
-.producthunt:active {
-    --color: #da552f;
+.facebook:hover,
+.facebook:active {
+    --color: #385898;
     color: var(--color);
     border-color: var(--color);
 }
